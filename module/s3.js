@@ -21,7 +21,7 @@ function getFile(bucket, key) {
 function pushFile(bucket, key) {
     return new Promise(function (resolve, reject) {
         var params = {Bucket: bucket, Key: 'file_name1', Body: 'Hello!'};
-        s3bucket.putObject(params, function(err, data) {
+        s3.putObject(params, function(err, data) {
             if (err) {
                 console.log("Error uploading data: ", err);
                 reject(err);

@@ -1,5 +1,7 @@
 var bucket = require('./module/s3.js');
 var mail = require('./module/mail.js');
+var path = require('path');
+global.appRoot = path.resolve(__dirname);
 
 exports.handler = function (event, context, callback) {
     bucket.getFile('shopsleek.in', 'attachment.pdf')
