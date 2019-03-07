@@ -1,8 +1,7 @@
 {
   "aws" : {
-    "userid" : "",
-    "key":"",
-    "region":""
+    "mailQueName" : "MailQueue",
+    "mailQueUrl" : "https://sqs.ap-south-1.amazonaws.com/747553984264/MailQueue"
   }
 
 }

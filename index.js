@@ -1,10 +1,15 @@
 var bucket = require('./module/s3.js');
 var mail = require('./module/mail.js');
-var path = require('path');
-global.appRoot = path.resolve(__dirname);
+var sqs = require('./module/sqs.js');
 
 exports.handler = function (event, context, callback) {
-    bucket.getFile('shopsleek.in', 'attachment.pdf')
+    getFileAndSendMail();
+    sqs.rcvMsgFromQue();
+};
+
+
+function getFileAndSendMail() {
+bucket.getFile('shopsleek.in', 'attachment.pdf')
         .then(function (fileData) {
             console.log("fileData :::: ", fileData);
             var mailOptions = {
@@ -29,4 +34,4 @@ exports.handler = function (event, context, callback) {
             console.log('Error getting attachment from S3');
             callback(err);
         });
-};
+}

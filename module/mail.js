@@ -4,7 +4,7 @@ var ses = require('nodemailer-ses-transport');
 var config = require('config');
 
 function sendSES(mailOptions){
-            aws.config.loadFromPath(appRoot + '/config/config.json');
+            aws.config.loadFromPath(process.cwd() + '/config/config.json');
             /*var transporter = nodemailer.createTransport(ses({
                 accessKeyId: config.get('aws.userid'),
                 secretAccessKey: config.get('aws.key')
