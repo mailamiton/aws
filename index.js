@@ -1,20 +1,21 @@
 var bucket = require('./module/s3.js');
 var mail = require('./module/mail.js');
 var sqs = require('./module/sqs.js');
+var sns = require('./module/sns.js');
 var fs = require('fs');
 
 exports.handler = function (event, context, callback) {
    // getFileAndSendMail();
     //sqs.rcvMsgFromQue();
     //sqs.sendMsgToQue();
-
-      var fileStream = fs.createReadStream("all.pdf");
+      /*var fileStream = fs.createReadStream("all.pdf");
       bucket.pushFile('shopsleek.in', 'all.pdf', fileStream).then(function (fileData) {
         console.log("fileData :::: ", fileData);
         }).catch(function (error) {
           console.log(error);
           callback(err);
-      });
+      });*/
+     sns.publishTropic("This is Sample Test");
 
 };
 
