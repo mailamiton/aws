@@ -1,6 +1,6 @@
 var aws = require('aws-sdk');
+aws.config.loadFromPath(process.cwd() + '/config/config.json');
 var s3 = new aws.S3();
-
 
 function getFile(bucket, key) {
     return new Promise(function (resolve, reject) {
@@ -18,22 +18,20 @@ function getFile(bucket, key) {
 }
 
 
-function pushFile(bucket, key) {
+function pushFile(bucket, fileName, bytes) {
     return new Promise(function (resolve, reject) {
-        var params = {Bucket: bucket, Key: 'file_name1', Body: 'Hello!'};
+        var params = {Bucket: bucket, Key: fileName, Body: bytes};
         s3.putObject(params, function(err, data) {
             if (err) {
                 console.log("Error uploading data: ", err);
                 reject(err);
             } else {
-                res.writeHead(200, {'Content-Type':'text/plain'});
-                res.write("Successfully uploaded data to bucket/sub-bucket/");
-                res.end()
-                resolve(null, res);
+                resolve(null,"SUCCESS" );
             }
         });
     })
 }
+
 
 module.exports = {getFile, pushFile};
 
