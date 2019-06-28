@@ -6,8 +6,10 @@ var fs = require('fs');
 
 exports.handler = function (event, context, callback) {
    // getFileAndSendMail();
-    //sqs.rcvMsgFromQue();
+
     //sqs.sendMsgToQue();
+    //sqs.rcvMsgFromQue();
+    //sqs.delMsgFromQue("AQEBLFZ3TKk0/em4cxcD0YkrMgqiRs7ydP4gNVN2MUq8OFJdNVltsvDDS/DRNzq0tSOMkUAYMw7KXOLHi3D1rucGL/9xeqUFWQRedsCckFAj5ar2kk7P4PLdr5NEiNzAknLZBnnuAmNB9DzwA7V0OwHkUEp2wvIBGV+dmXP+AVj3apZqZPqiVF/2IqeCjGRaOAh2n8qsS9CO48CDLhJY8kowDXtXP4XQQkmMFIlyo8ohu6Ik7ap71AE02JZLLSxY8hZe6n95ds9JmhhgMfZ5G+PFPsrhKufbNaoVvP77+mc1Xl8vtrC0S23SPqqB8KZ5VkAe3/MD4sKbd1DfRzlBEYrD3bFHlfyGMBpxUJ1S1hKTefIoGST0gqaGdoLU9yjMXtxZkd74A7C7QWnhdWa6YDUe6Q==");
       /*var fileStream = fs.createReadStream("all.pdf");
       bucket.pushFile('shopsleek.in', 'all.pdf', fileStream).then(function (fileData) {
         console.log("fileData :::: ", fileData);
@@ -15,7 +17,7 @@ exports.handler = function (event, context, callback) {
           console.log(error);
           callback(err);
       });*/
-     sns.publishTropic("This is Sample Test");
+    // sns.publishTropic("This is Sample Test");
 
 };
 

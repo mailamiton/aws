@@ -69,7 +69,7 @@ function rcvMsgFromQue() {
 }
 
 
-function delMsgFromQue() {
+function delMsgFromQue(receipt) {
  var params = {
         QueueUrl: appConst.awsSQS.mailQueUrl,
         ReceiptHandle: receipt
@@ -102,4 +102,4 @@ function prgMsgFromQue() {
 
 
 
-module.exports ={createQue, listQue, sendMsgToQue, rcvMsgFromQue};
+module.exports ={createQue, listQue, sendMsgToQue, rcvMsgFromQue, delMsgFromQue};
