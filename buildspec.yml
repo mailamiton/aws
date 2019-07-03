@@ -1,6 +1,8 @@
 version: 0.1
 phases:
     install:
+        runtime-versions:
+            node: 10.0
         commands:
         - npm install
         - aws s3 sync . s3://eurokart/GF --delete  --profile oms
