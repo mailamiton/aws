@@ -5,4 +5,4 @@ phases:
           nodejs: 10
         commands:
         - npm install
-        - aws s3 sync . s3://eurokart/GF --delete  --profile oms
+        - aws s3 sync . s3://eurokart/GF --delete
