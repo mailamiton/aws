@@ -5,4 +5,4 @@ phases:
           nodejs: 10
         commands:
         - npm install
-        - aws s3 sync . s3://oms-gf-build --delete
+        - aws s3 sync . s3://oms-gf-build/GF --delete
