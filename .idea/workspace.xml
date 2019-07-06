@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30c51a75-4448-47fa-9831-9c1cd1b4c650" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/buildspec.yml" afterPath="$PROJECT_DIR$/buildspec.yml" />
-    </list>
+    <list default="true" id="30c51a75-4448-47fa-9831-9c1cd1b4c650" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +15,7 @@
         <entry file="file://$PROJECT_DIR$/buildspec.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+              <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -583,7 +581,7 @@
     <entry file="file://$PROJECT_DIR$/buildspec.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="44" />
           <folding />
         </state>
       </provider>
