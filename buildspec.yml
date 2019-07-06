@@ -1,8 +1,25 @@
 version: 0.2
 phases:
-    install:
-        runtime-versions:
-          nodejs: 10
-        commands:
-        - npm install
-        - aws s3 sync . s3://oms-gf-build/GF --delete
+  install:
+    commands:
+  pre_build:
+    commands:
+      - echo Build started on `date`
+      - echo Installing source NPM dependencies...
+      - npm install
+  build:
+    commands:
+  post_build:
+    commands:
+      - echo Build completed on `date`
+# Include only the files required for your application to run.
+# Do not use recursively include artifacts from node_modules directory as it will include unnecessary packages
+# used only for building and testing.
+# ExpressJS apps will need other artifact directories included (bin/*, public/*, routes/*, views/* etc).
+artifacts:
+  files:
+    - index.js
+    - package.json
+    - node_modules/*
+    - module/*
+    - config/*
