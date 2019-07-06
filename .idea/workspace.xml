@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30c51a75-4448-47fa-9831-9c1cd1b4c650" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/install_dependencies.sh" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/start_server.sh" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/stop_server.sh" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/validate_server.sh" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/server.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/buildspec.yml" afterPath="$PROJECT_DIR$/buildspec.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +16,8 @@
       <file leaf-file-name="buildspec.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/buildspec.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -636,8 +630,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/buildspec.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
           <folding />
         </state>
       </provider>

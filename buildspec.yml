@@ -27,6 +27,7 @@ artifacts:
     - config/*
     - scripts/*
     - server.js
+    - buildspec.yml
 
 files:
   - source: server.js
