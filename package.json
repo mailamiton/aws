@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/xoor-io/lambda-send-attachment#readme",
   "dependencies": {
-    "async": "^2.6.2",
+    "async": "^2.6.4",
     "aws-sdk": "^2.413.0",
     "config": "^3.0.1",
     "node-ses": "^2.2.0",
