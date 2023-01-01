@@ -19,7 +19,7 @@
   "dependencies": {
     "async": "^2.6.2",
     "aws-sdk": "^2.413.0",
-    "config": "^3.0.1",
+    "config": "^3.3.8",
     "node-ses": "^2.2.0",
     "nodemailer": "^2.7.2",
     "nodemailer-ses-transport": "^1.5.1"
